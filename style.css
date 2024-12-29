@@ -29,6 +29,11 @@ img {
 
 .center {
   text-align: center; /* Centrerer alt indhold horisontalt */
+  align-items: center;
+}
+
+main {
+  margin: 1200px;
 }
 
 /* menu */
@@ -51,7 +56,10 @@ img {
   color: #700d1c;
 }
 
-.forside_img {
+/* slut */
+
+.forside_img_container {
+  align-items: center;
   aspect-ratio: auto;
   width: 300px;
 }
@@ -76,4 +84,28 @@ img {
   font-style: italic;
 }
 
+.kontakt_mig {
+  font-weight: 600;
+}
+
 /* slut */
+
+/* ikoner indstillinger for billederne */
+.ikon {
+  height: 20px;
+  width: auto;
+  display: flex;
+}
+
+.footer_ikoner {
+  display: flex;
+  justify-content: space-between;
+  list-style: none;
+  justify-content: flex-end;
+  align-items: center;
+  gap: 1cqw;
+}
+
+footer {
+  margin: 10cqw 10cqw 2cqw 10cqw;
+}
