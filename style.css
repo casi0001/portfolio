@@ -33,7 +33,7 @@ img {
 }
 
 main {
-  margin: 1200px;
+  max-width: 1200px;
 }
 
 /* menu */
@@ -56,7 +56,9 @@ main {
   color: #700d1c;
 }
 
-/* slut */
+/* menu slut */
+
+/* forside styling */
 
 .forside_img_container {
   align-items: center;
@@ -88,9 +90,21 @@ main {
   font-weight: 600;
 }
 
-/* slut */
+/* forside styling slut */
 
-/* ikoner indstillinger for billederne */
+/* projekt siden 2 */
+
+.mappe {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+}
+
+/* projektsiden 2 slut */
+
+/* generel footer */
+
+/*ikoner indstillinger for billederne */
 .ikon {
   height: 20px;
   width: auto;
@@ -107,5 +121,7 @@ main {
 }
 
 footer {
-  margin: 10cqw 10cqw 2cqw 10cqw;
+  margin: 10cqw 10cqw 0 10cqw;
 }
+
+/* footer slut */
