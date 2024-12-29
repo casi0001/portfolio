@@ -38,6 +38,9 @@ main {
   padding: 20px; /* Lidt padding for indholdet */
   box-sizing: border-box; /* Inkluderer padding i bredden */
 }
+h1 {
+  padding-bottom: 20px;
+}
 
 /* menu */
 
