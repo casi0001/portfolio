@@ -1,0 +1,79 @@
+/*************** Reset *********************/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+/*************** Reset *********************/
+
+/* fonte family */
+.inter {
+  font-family: "Inter", serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
+
+/* fonte family slut*/
+
+* {
+  background-color: #f3f2f0;
+  color: #333;
+}
+
+.center {
+  text-align: center; /* Centrerer alt indhold horisontalt */
+}
+
+/* menu */
+
+.menu {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.menu a {
+  display: block;
+  padding: 10px;
+  color: #333;
+  text-decoration: none;
+}
+
+.menu a:hover {
+  color: #700d1c;
+}
+
+.forside_img {
+  aspect-ratio: auto;
+  width: 300px;
+}
+
+/* tekst styling forside */
+.velkommen {
+  font-style: italic;
+  font-size: 7cqw;
+}
+
+.portfolio {
+  font-size: 17cqw;
+}
+
+.cathrine_singer {
+  font-size: 2.4cqw;
+  font-style: italic;
+}
+
+.multimediedesign_studerende {
+  font-size: 1.8cqw;
+  font-style: italic;
+}
+
+/* slut */
