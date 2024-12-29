@@ -33,7 +33,10 @@ img {
 }
 
 main {
-  max-width: 1200px;
+  max-width: 1200px; /* Max bredde på main */
+  margin: 0 auto; /* Centrerer main horisontalt */
+  padding: 20px; /* Lidt padding for indholdet */
+  box-sizing: border-box; /* Inkluderer padding i bredden */
 }
 
 /* menu */
@@ -43,6 +46,7 @@ main {
   list-style: none;
   margin: 0;
   padding: 0;
+  justify-content: end;
 }
 
 .menu a {
@@ -61,19 +65,20 @@ main {
 /* forside styling */
 
 .forside_img_container {
-  align-items: center;
-  aspect-ratio: auto;
-  width: 300px;
+  display: flex; /* Brug Flexbox for centrering */
+  justify-content: center; /* Centrerer billedet horisontalt */
+  align-items: center; /* Centrerer billedet vertikalt */
+  padding: 9px;
 }
 
 /* tekst styling forside */
 .velkommen {
   font-style: italic;
-  font-size: 7cqw;
+  font-size: 5cqw;
 }
 
 .portfolio {
-  font-size: 17cqw;
+  font-size: 13cqw;
 }
 
 .cathrine_singer {
@@ -94,10 +99,29 @@ main {
 
 /* projekt siden 2 */
 
-.mappe {
-  display: flex;
+.mappe_oversigt {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
   gap: 20px;
   list-style: none;
+  justify-content: space-between; /* Sørger for, at mapperne fylder hele linjen */
+}
+
+.mappe {
+  width: 200px; /* Giver mapperne en fast bredde på 200px */
+  box-sizing: border-box; /* Inkluderer padding og border i bredden */
+  display: flex; /* Brug Flexbox for at arrangere indholdet */
+  flex-direction: column; /* Stabler indholdet vertikalt */
+  align-items: center; /* Centrerer indholdet horisontalt */
+  text-align: center; /* Centrerer teksten */
+}
+
+.mappe_p {
+  margin-top: 10px; /* Lidt afstand mellem billede og tekst */
+}
+
+.transparent {
+  color: transparent;
 }
 
 /* projektsiden 2 slut */
