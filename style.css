@@ -49,6 +49,20 @@ main {
 }
 h1 {
   padding-bottom: 20px;
+  font-family: "Tinos", serif;
+  font-style: italic;
+}
+.button-link {
+  display: inline-block;
+  background-color: #b1c2e9;
+  border-radius: 15px;
+  padding: 15px;
+  text-decoration-line: none;
+  color: #333;
+}
+.button-link:hover {
+  background-color: #700d1c;
+  color: #f3f2f0;
 }
 
 /* generel styling slut */
@@ -58,11 +72,15 @@ h1 {
   text-align: center; /* Centrerer alt indhold horisontalt */
   align-items: center;
 }
+.forside_img {
+  height: 60cqw;
+  width: auto;
+}
 .forside_img_container {
   display: flex; /* Brug Flexbox for centrering */
   justify-content: center; /* Centrerer billedet horisontalt */
   align-items: center; /* Centrerer billedet vertikalt */
-  padding: 9px;
+  padding: 7px;
 }
 
 /* tekst styling forside */
@@ -116,6 +134,7 @@ h1 {
   flex-direction: column; /* Stabler indholdet vertikalt */
   align-items: center; /* Centrerer indholdet horisontalt */
   text-align: center; /* Centrerer teksten */
+  padding: 10px;
 }
 
 .mappe_p {
@@ -141,15 +160,33 @@ grid_1-1-1-1 {
   padding-bottom: 30px;
 }
 .rundt_img {
-  width: 80%;
+  width: 70%;
   height: auto;
   max-width: 400px;
 }
+.multimediedesign_h3 {
+  font-style: italic;
+  font-weight: 300;
+}
+.multimediedesign_h3 {
+  padding-top: 10px;
+}
+.p_1 {
+  padding-top: 8px;
+}
+.p_2 {
+  padding-top: 8px;
+}
+.p_3 {
+  padding-top: 8px;
+}
 .grid_2-3 {
-  display: 1fr;
   padding-top: 15px;
 }
 /* generel footer */
+footer {
+  font-size: 12px;
+}
 .grid_1-1-1-1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -201,6 +238,10 @@ footer {
   /* menu for desktop slut */
 
   /* tekst styling forside */
+  .forside_img {
+    height: 29cqw;
+    width: auto;
+  }
   .velkommen {
     font-family: "Tinos", serif;
     font-style: italic;
@@ -246,5 +287,22 @@ footer {
   }
   .tekst_om_mig {
     grid-column: 3 / 6;
+  }
+  .cathrine_h2 {
+    font-size: 2.3cqw;
+  }
+  .multimediedesign_h3 {
+    font-size: 1.7cqw;
+    font-style: italic;
+    font-weight: 300;
+  }
+  .p_1 {
+    font-size: 1.2cqw;
+  }
+  .p_2 {
+    font-size: 1.2cqw;
+  }
+  .p_3 {
+    font-size: 1.2cqw;
   }
 }
