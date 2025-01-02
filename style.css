@@ -35,14 +35,10 @@ img {
 
 /* fonte family slut*/
 
+/* generel styling */
 * {
   background-color: #f3f2f0;
   color: #333;
-}
-
-.center {
-  text-align: center; /* Centrerer alt indhold horisontalt */
-  align-items: center;
 }
 
 main {
@@ -54,113 +50,14 @@ main {
 h1 {
   padding-bottom: 20px;
 }
-/* menu */
 
-.menu {
-  display: flex;
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  justify-content: end;
-}
-
-.menu a {
-  /* a tags referer til alle <a> tags inde i menu */
-  display: block;
-  padding: 10px;
-  color: #333;
-  text-decoration: none;
-}
-
-.menu a:hover {
-  color: #700d1c;
-}
-
-/*  placering af elemnterne i menu delien (både burger og menu) til venstre */
-nav {
-  display: flex;
-  justify-content: space-between; /* Placerer elementerne (menu og burger) på hver sin side */
-  align-items: center;
-  padding: 10px 20px;
-  position: relative;
-}
-
-/* styling af hvor bred og høj burger menuen er */
-.burger {
-  width: 30px;
-  height: 20px;
-  cursor: pointer;
-}
-
-/* de 3 linjer i burgermenuen */
-.burger .line {
-  width: 100%;
-  height: 2px;
-  background-color: black;
-  margin-bottom: 5px;
-  transition: 0.2s linear;
-}
-/* de 3 linjer i burger menuen slut */
-
-.burger {
-  display: none;
-}
-/* menu slut */
-
-/* burger menu og media query */
-
-@media screen and (max-width: 800px) {
-  .menu {
-    display: none;
-  }
-  .burger {
-    display: block;
-  }
-
-  /* styling for det der danner krydset når man trykker på burgermenuen */
-  .burger.active .line:nth-child(1) {
-    transform: rotate(45deg) translate(5px, 5px);
-    transition: 0.2s linear;
-  }
-
-  .burger.active .line:nth-child(2) {
-    opacity: 0;
-    transition: 0.15s linear;
-  }
-
-  .burger.active .line:nth-child(3) {
-    transform: rotate(-45deg) translate(5px, -5px);
-    transition: 0.2s linear;
-  }
-  /* slut på styling af burgermneu der danner et kryds ved aktiv */
-
-  /* når man trykker på menuen og den åbner sig med hjem, projekter og om mig */
-  nav.active .menu {
-    display: block;
-    background-color: #ffffff;
-    position: absolute;
-    top: 94px;
-    left: 0;
-    width: 100%;
-    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
-    z-index: 1;
-  }
-
-  /* styling for teksten i burger menuen */
-  nav.active .menu li {
-    margin: 10px 30px;
-  }
-
-  /* størrelsen på teksten i burger menuen */
-  nav.active .menu a {
-    font-size: 18px;
-  }
-}
-
-/* burger menu slut */
+/* generel styling slut */
 
 /* forside styling */
-
+.center {
+  text-align: center; /* Centrerer alt indhold horisontalt */
+  align-items: center;
+}
 .forside_img_container {
   display: flex; /* Brug Flexbox for centrering */
   justify-content: center; /* Centrerer billedet horisontalt */
@@ -173,6 +70,7 @@ nav {
   font-family: "Tinos", serif;
   font-style: italic;
   font-size: 5cqw;
+  line-height: 0.3;
 }
 
 .portfolio {
@@ -180,6 +78,7 @@ nav {
   font-family: "Tinos", serif;
   font-weight: 700;
   font-style: italic;
+  line-height: 1;
 }
 
 .cathrine_singer {
@@ -226,6 +125,10 @@ nav {
 .transparent {
   color: transparent;
 }
+
+/* projektsiden 2 slut */
+
+/* generel footer */
 .grid_1-1-1-1-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
@@ -244,10 +147,6 @@ nav {
   grid-column: 5;
   padding-bottom: 30px;
 }
-
-/* projektsiden 2 slut */
-
-/* generel footer */
 
 /*ikoner indstillinger for billederne */
 .ikon {
@@ -270,3 +169,42 @@ footer {
 }
 
 /* footer slut */
+
+/* media query for desktop*/
+@media screen and (min-width: 800px) {
+  /* menu for desktop start */
+  .burger {
+    display: none;
+  }
+
+  /* menu for desktop slut */
+
+  /* tekst styling forside */
+  .velkommen {
+    font-family: "Tinos", serif;
+    font-style: italic;
+    font-size: 3cqw;
+    line-height: 0.1;
+  }
+
+  .portfolio {
+    font-size: 13cqw;
+    font-family: "Tinos", serif;
+    font-weight: 700;
+    line-height: 1;
+    font-style: italic;
+  }
+
+  .cathrine_singer {
+    font-size: 2.9cqw;
+    font-style: italic;
+    font-family: "Tinos", serif;
+  }
+
+  .multimediedesign_studerende {
+    font-size: 2.2cqw;
+    font-style: italic;
+    font-family: "Tinos", serif;
+  }
+  /* tekst styling forside slut */
+}
