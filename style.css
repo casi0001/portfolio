@@ -41,7 +41,6 @@ main {
 h1 {
   padding-bottom: 20px;
 }
-
 /* menu */
 
 .menu {
@@ -64,6 +63,32 @@ h1 {
   color: #700d1c;
 }
 
+/*  placering af elemnterne i menu delien (både burger og menu) til venstre */
+nav {
+  display: flex;
+  justify-content: space-between; /* Placerer elementerne (menu og burger) på hver sin side */
+  align-items: center;
+  padding: 10px 20px;
+  position: relative;
+}
+
+/* styling af hvor bred og høj burger menuen er */
+.burger {
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+/* de 3 linjer i burgermenuen */
+.burger .line {
+  width: 100%;
+  height: 2px;
+  background-color: black;
+  margin-bottom: 5px;
+  transition: 0.2s linear;
+}
+/* de 3 linjer i burger menuen slut */
+
 .burger {
   display: none;
 }
@@ -78,6 +103,8 @@ h1 {
   .burger {
     display: block;
   }
+
+  /* styling for det der danner krydset når man trykker på burgermenuen */
   .burger.active .line:nth-child(1) {
     transform: rotate(45deg) translate(5px, 5px);
     transition: 0.2s linear;
@@ -92,7 +119,9 @@ h1 {
     transform: rotate(-45deg) translate(5px, -5px);
     transition: 0.2s linear;
   }
+  /* slut på styling af burgermneu der danner et kryds ved aktiv */
 
+  /* når man trykker på menuen og den åbner sig med hjem, projekter og om mig */
   nav.active .menu {
     display: block;
     background-color: #ffffff;
@@ -104,12 +133,14 @@ h1 {
     z-index: 1;
   }
 
+  /* styling for teksten i burger menuen */
   nav.active .menu li {
-    margin: 10px 20px;
+    margin: 10px 30px;
   }
 
+  /* størrelsen på teksten i burger menuen */
   nav.active .menu a {
-    font-size: 24px;
+    font-size: 18px;
   }
 }
 
