@@ -226,6 +226,24 @@ nav {
 .transparent {
   color: transparent;
 }
+.grid_1-1-1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+.kontakt_mig {
+  padding-bottom: 8px;
+}
+.spørgsmål {
+  padding-bottom: 4px;
+  grid-column: 1 / span 3;
+}
+.mail_kontakt {
+  grid-column: 1;
+}
+.footer_ikoner {
+  grid-column: 5;
+  padding-bottom: 30px;
+}
 
 /* projektsiden 2 slut */
 
