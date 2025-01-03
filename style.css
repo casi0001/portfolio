@@ -53,6 +53,21 @@ h1 {
   font-family: "Tinos", serif;
   font-style: italic;
 }
+h2 {
+  padding-bottom: 15px;
+  font-family: "Tinos", serif;
+  font-style: italic;
+}
+h3 {
+  padding-bottom: 10px;
+}
+.p_space {
+  padding-bottom: 9px;
+}
+.p_space_end {
+  padding-bottom: 20px;
+}
+
 .button-link {
   display: inline-block;
   background-color: #b1c2e9;
@@ -65,6 +80,48 @@ h1 {
   background-color: #700d1c;
   color: #f3f2f0;
 }
+
+/* burger menu strat */
+.menu {
+  display: none;
+}
+.burger {
+  display: block;
+}
+.burger.active .line:nth-child(1) {
+  transform: rotate(45deg) translate(5px, 5px);
+  transition: 0.2s linear;
+}
+
+.burger.active .line:nth-child(2) {
+  opacity: 0;
+  transition: 0.15s linear;
+}
+
+.burger.active .line:nth-child(3) {
+  transform: rotate(-45deg) translate(5px, -5px);
+  transition: 0.2s linear;
+}
+
+nav.active .menu {
+  display: block;
+  background-color: #ffffff;
+  position: absolute;
+  top: 94px;
+  left: 0;
+  width: 100%;
+  box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
+  z-index: 1;
+}
+
+nav.active .menu li {
+  margin: 10px 20px;
+}
+
+nav.active .menu a {
+  font-size: 24px;
+}
+/* burger menu slut */
 
 /* generel styling slut */
 
@@ -173,15 +230,7 @@ grid_1-1-1-1 {
 .multimediedesign_h3 {
   padding-top: 10px;
 }
-.p_1 {
-  padding-top: 8px;
-}
-.p_2 {
-  padding-top: 8px;
-}
-.p_3 {
-  padding-top: 8px;
-}
+
 .grid_2-3 {
   padding-top: 15px;
 }
@@ -240,17 +289,23 @@ footer {
   /* generelt slut */
 
   /* menu for desktop start */
-  .burger {
-    display: none;
-  }
 
   header {
+    position: sticky;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #700d1c;
+    background-color: #ffffff;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.1);
   }
+
+  .logo img {
+    width: 50px;
+    height: 50px;
+  }
+
   nav {
     display: flex;
     align-items: center;
@@ -274,21 +329,38 @@ footer {
   .menu a {
     display: block;
     padding: 10px;
-    color: black;
+    color: #333333;
     text-decoration: none;
     transition: color 0.3s;
     text-align: end;
   }
 
   .menu a:hover {
-    color: rgb(68, 179, 142);
+    color: #ff0000;
+  }
+
+  .burger {
+    width: 30px;
+    height: 20px;
+    cursor: pointer;
+  }
+
+  .burger .line {
+    width: 100%;
+    height: 2px;
+    background-color: #333333;
+    margin-bottom: 5px;
+    transition: 0.2s linear;
+  }
+  .burger {
+    display: none;
   }
 
   /* menu for desktop slut */
 
   /* tekst styling forside */
   .forside_img {
-    height: 29cqw;
+    height: 40cqw;
     width: auto;
   }
   .velkommen {
@@ -359,14 +431,32 @@ footer {
   .grid_1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr;
+    gap: 20px;
+    align-self: strech;
   }
-  .tekst1_tema2 {
-    grid-column: 1;
+  .img_i_grid {
+    order: -1;
+    width: 400px;
+    height: auto;
   }
-  .img1_tema2 {
-    grid-column: 2;
+
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+    align-self: strech;
   }
-  .p_space {
-    padding-bottom: 10px;
+  .tema2_img1 {
+    width: 400px;
+    height: auto;
+    justify-self: center;
   }
+  .grid_2-1 {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 20px;
+    padding-bottom: 40px;
+  }
+
+  /* tema 3 grundlæggende ux/ui */
 }
