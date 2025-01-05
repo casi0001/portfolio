@@ -67,6 +67,9 @@ h3 {
 .p_space_end {
   padding-bottom: 20px;
 }
+.p_space_top {
+  padding-top: 9px;
+}
 
 .button-link {
   display: inline-block;
@@ -79,6 +82,17 @@ h3 {
 .button-link:hover {
   background-color: #700d1c;
   color: #f3f2f0;
+}
+
+.forside-button-link {
+  width: 90px;
+}
+.flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 10px;
+  gap: 0px 10px;
 }
 
 /* burger menu strat */
@@ -168,6 +182,19 @@ h3 {
 
 grid_1-1-1-1 {
   display: none;
+}
+
+/* hover for mappe billederne og forside billede */
+.m img {
+  /* width: 100%;
+  height: 100%; */
+  object-fit: cover; /* Sørg for at billedet dækker hele containeren uden at blive forvrænget */
+  transition: filter 0.3s ease; /* Glidende overgang ved hover */
+}
+
+/* Hover effekt på mappe billederne der ændrer stærrelsen til 1.1 */
+.m img:hover {
+  scale: 1.01;
 }
 
 /* projektsiden 2 slut */
@@ -284,6 +311,15 @@ footer {
     font-size: 2.2cqw;
     font-style: italic;
     font-family: "Tinos", serif;
+  }
+
+  .forside_tekst {
+    margin-left: 212px;
+    margin-right: 212px;
+  }
+
+  .p_space_top {
+    padding-top: 100px;
   }
   /* tekst styling forside slut */
 
