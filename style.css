@@ -89,14 +89,9 @@ h3 {
 
 .forside-button-link {
   width: 200px;
+  /* gap: 20px; */
 }
-.flex {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  padding: 10px;
-  gap: 0px 10px;
-}
+/* her nu */
 
 /* burger menu strat */
 
@@ -117,7 +112,6 @@ h3 {
   display: flex; /* Brug Flexbox for centrering */
   justify-content: center; /* Centrerer billedet horisontalt */
   align-items: center; /* Centrerer billedet vertikalt */
-  padding: 7px;
 }
 
 /* tekst styling forside */
@@ -131,8 +125,9 @@ h3 {
 
 .portfolio {
   font-size: 20cqw;
+  letter-spacing: 8px;
   font-family: "Tinos", serif;
-  font-weight: 700;
+  font-weight: 800;
   font-style: italic;
   line-height: 1;
 }
@@ -144,7 +139,7 @@ h3 {
 }
 
 .multimediedesign_studerende {
-  font-size: 2.9cqw;
+  font-size: 2.4cqw;
   font-style: italic;
   font-family: "Tinos", serif;
 }
@@ -286,39 +281,55 @@ footer {
 
   /* tekst styling forside */
   .forside_img {
-    height: 40cqw;
+    height: 33cqw;
     width: auto;
   }
   .velkommen {
     font-family: "Tinos", serif;
     font-style: italic;
-    font-size: 3cqw;
+    font-size: 2.2cqw;
     line-height: 0.1;
   }
 
   .portfolio {
-    font-size: 13cqw;
+    font-size: 11cqw;
+    letter-spacing: 8px;
     font-family: "Tinos", serif;
-    font-weight: 700;
     line-height: 1;
     font-style: italic;
   }
 
   .cathrine_singer {
-    font-size: 2.9cqw;
-    font-style: italic;
-    font-family: "Tinos", serif;
-  }
-
-  .multimediedesign_studerende {
     font-size: 2.2cqw;
     font-style: italic;
     font-family: "Tinos", serif;
   }
 
+  .multimediedesign_studerende {
+    font-size: 1.4cqw;
+    font-style: italic;
+    font-family: "Tinos", serif;
+  }
+  .flex {
+    display: grid;
+    grid-template-rows: 1fr, 1fr, 1fr;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+  }
+  .knap_1 {
+    width: 160px;
+    grid-row: 2;
+    align-content: center;
+  }
+  .knap_2 {
+    width: 160px;
+    grid-row: 3;
+    align-content: center;
+  }
   .forside_tekst {
-    margin-left: 212px;
-    margin-right: 212px;
+    margin-left: 15cqw;
+    margin-right: 15cqw;
   }
 
   .p_space_top {
