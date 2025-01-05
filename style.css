@@ -53,6 +53,7 @@ h1 {
   padding-top: 20px;
   font-family: "Tinos", serif;
   font-style: italic;
+  font-size: 5cqw;
 }
 h2 {
   padding-bottom: 15px;
@@ -62,6 +63,9 @@ h2 {
 h3 {
   padding-bottom: 10px;
 }
+p {
+  font-size: xx-larges;
+}
 .p_space {
   padding-bottom: 9px;
 }
@@ -70,6 +74,9 @@ h3 {
 }
 .p_space_top {
   padding-top: 20px;
+}
+.flexbox_temasider {
+  display: flex;
 }
 
 .button-link {
@@ -90,6 +97,19 @@ h3 {
 .forside-button-link {
   width: 200px;
   /* gap: 20px; */
+}
+
+.computer_img_forside {
+  width: 300px;
+  height: auto;
+  padding-bottom: 40px;
+}
+
+.andet_billede_forside {
+  order: -1;
+  width: 400px;
+  height: auto;
+  padding-bottom: 40px;
 }
 /* her nu */
 
@@ -136,6 +156,7 @@ h3 {
   font-size: 4.9cqw;
   font-style: italic;
   font-family: "Tinos", serif;
+  padding-top: 8px;
 }
 
 .multimediedesign_studerende {
@@ -181,6 +202,19 @@ h3 {
 grid_1-1-1-1 {
   display: none;
 }
+.grid_1-1-1 {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 20px;
+  align-self: strech;
+}
+.p_space_top2 {
+  padding-top: 8px;
+}
+
+.bund_padding {
+  padding-bottom: 20px;
+}
 
 /* hover for mappe billederne og forside billede */
 .m img {
@@ -210,16 +244,18 @@ grid_1-1-1-1 {
   height: auto;
   max-width: 400px;
 }
-.multimediedesign_h3 {
+.multimediedesign_h2 {
   font-style: italic;
   font-weight: 300;
-}
-.multimediedesign_h3 {
   padding-top: 10px;
 }
 
 .grid_2-3 {
   padding-top: 15px;
+}
+
+.cathrine_h2 {
+  padding-bottom: 10px;
 }
 /* generel footer */
 footer {
@@ -271,6 +307,7 @@ footer {
   /* generelt */
   h1 {
     padding-top: 50px;
+    padding-bottom: 30px;
   }
 
   /* generelt slut */
@@ -338,6 +375,13 @@ footer {
   /* tekst styling forside slut */
 
   /* side 2 projekt */
+  .grid_1-1-1 {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    align-self: strech;
+  }
+
   .grid_1-1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -358,7 +402,7 @@ footer {
   .cathrine_h2 {
     font-size: 2.3cqw;
   }
-  .multimediedesign_h3 {
+  .multimediedesign_h2 {
     font-size: 1.7cqw;
     font-style: italic;
     font-weight: 300;
@@ -378,24 +422,17 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr;
     gap: 20px;
-    align-self: strech;
   }
-  .img_i_grid {
+  .andet_billede_forside {
     order: -1;
     width: 400px;
     height: auto;
+    padding-bottom: 40px;
   }
 
-  .grid_1-1-1 {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    gap: 20px;
-    align-self: strech;
-  }
-  .tema2_img1 {
+  .computer_img_forside {
     width: 400px;
     height: auto;
-    justify-self: center;
   }
   .grid_2-1 {
     display: grid;
