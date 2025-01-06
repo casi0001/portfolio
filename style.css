@@ -53,7 +53,7 @@ h1 {
   padding-top: 20px;
   font-family: "Tinos", serif;
   font-style: italic;
-  font-size: 5cqw;
+  font-size: xx-large;
 }
 h2 {
   padding-bottom: 15px;
@@ -63,9 +63,7 @@ h2 {
 h3 {
   padding-bottom: 10px;
 }
-p {
-  font-size: xx-larges;
-}
+
 .p_space {
   padding-bottom: 9px;
 }
@@ -75,8 +73,17 @@ p {
 .p_space_top {
   padding-top: 20px;
 }
+.p_space_top3 {
+  padding-top: 15px;
+}
 .flexbox_temasider {
   display: flex;
+  align-content: space-betweenx;
+}
+.flex_bund {
+  justify-content: center; /* Centrerer knapperne horisontalt */
+  align-items: center; /* Centrerer knapperne vertikalt */
+  gap: 20px;
 }
 
 .button-link {
@@ -195,10 +202,6 @@ p {
   margin-top: 10px; /* Lidt afstand mellem billede og tekst */
 }
 
-.transparent {
-  color: transparent;
-}
-
 grid_1-1-1-1 {
   display: none;
 }
@@ -227,6 +230,19 @@ grid_1-1-1-1 {
 /* Hover effekt på mappe billederne der ændrer stærrelsen til 1.1 */
 .m img:hover {
   scale: 1.01;
+}
+
+/* hove rfor ikoner */
+.i img {
+  /* width: 100%;
+    height: 100%; */
+  object-fit: cover; /* Sørg for at billedet dækker hele containeren uden at blive forvrænget */
+  transition: filter 0.3s ease; /* Glidende overgang ved hover */
+}
+
+/* Hover effekt på mappe billederne der ændrer stærrelsen til 1.1 */
+.i img:hover {
+  scale: 1.1;
 }
 
 /* projektsiden 2 slut */
@@ -286,6 +302,10 @@ footer {
   width: auto;
   display: flex;
 }
+.ikon_2 {
+  height: 40px;
+  width: auto;
+}
 
 .footer_ikoner {
   display: flex;
@@ -297,7 +317,7 @@ footer {
 }
 
 footer {
-  margin: 10cqw 10cqw 0 10cqw;
+  margin: 7cqw 10cqw 0 10cqw;
 }
 
 /* footer slut */
@@ -308,8 +328,20 @@ footer {
   h1 {
     padding-top: 50px;
     padding-bottom: 30px;
+    font-size: 3.5cqw;
   }
-
+  h2 {
+    font-size: xx-large;
+  }
+  h3 {
+    font-size: x-large;
+  }
+  p {
+    font-size: 1.2cqw;
+  }
+  footer {
+    font-size: 10px;
+  }
   /* generelt slut */
 
   /* menu for desktop start */
@@ -318,7 +350,7 @@ footer {
 
   /* tekst styling forside */
   .forside_img {
-    height: 33cqw;
+    height: 26cqw;
     width: auto;
   }
   .velkommen {
@@ -370,7 +402,7 @@ footer {
   }
 
   .p_space_top {
-    padding-top: 150px;
+    padding-top: 100px;
   }
   /* tekst styling forside slut */
 
@@ -423,6 +455,12 @@ footer {
     grid-template-columns: 1fr 1fr;
     gap: 20px;
   }
+  .grid_1-2 {
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    gap: 20px;
+    padding-bottom: 30px;
+  }
   .andet_billede_forside {
     order: -1;
     width: 400px;
@@ -438,7 +476,7 @@ footer {
     display: grid;
     grid-template-columns: 2fr 1fr;
     gap: 20px;
-    padding-bottom: 40px;
+    padding-bottom: 30px;
   }
 
   /* tema 3 grundlæggende ux/ui */
