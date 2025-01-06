@@ -78,7 +78,7 @@ h3 {
 }
 .flexbox_temasider {
   display: flex;
-  align-content: space-betweenx;
+  align-content: space-between;
 }
 .flex_bund {
   justify-content: center; /* Centrerer knapperne horisontalt */
@@ -131,6 +131,7 @@ h3 {
   text-align: center; /* Centrerer alt indhold horisontalt */
   align-items: center;
 }
+
 .forside_img {
   height: 60cqw;
   width: auto;
@@ -359,7 +360,11 @@ footer {
     font-size: 2.2cqw;
     line-height: 0.1;
   }
-
+  .left {
+    text-align: left; /* Centrerer alt indhold horisontalt */
+    align-items: left;
+    margin-left: 220px;
+  }
   .portfolio {
     font-size: 11cqw;
     letter-spacing: 8px;
@@ -418,6 +423,7 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
+
   /* side 2 projekter slut */
 
   /* side 3 om mig start */
