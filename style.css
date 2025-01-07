@@ -201,21 +201,21 @@ h3 {
   grid-template-columns: 1fr 1fr;
   gap: 20px;
   list-style: none;
-  justify-content: space-between; /* Sørger for, at mapperne fylder hele linjen */
+  justify-content: space-between;
 }
 
 .mappe {
-  width: 180px; /* Giver mapperne en fast bredde på 200px */
-  box-sizing: border-box; /* Inkluderer padding og border i bredden */
-  display: flex; /* Brug Flexbox for at arrangere indholdet */
-  flex-direction: column; /* Stabler indholdet vertikalt */
-  align-items: center; /* Centrerer indholdet horisontalt */
-  text-align: center; /* Centrerer teksten */
+  width: 180px;
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
   padding: 10px;
 }
 
 .mappe_p {
-  margin-top: 10px; /* Lidt afstand mellem billede og tekst */
+  margin-top: 10px;
 }
 
 grid_1-1-1-1 {
@@ -243,8 +243,8 @@ grid_1-1-1-1 {
 .m img {
   /* width: 100%;
   height: 100%; */
-  object-fit: cover; /* Sørg for at billedet dækker hele containeren uden at blive forvrænget */
-  transition: filter 0.3s ease; /* Glidende overgang ved hover */
+  object-fit: cover;
+  transition: filter 0.3s ease;
 }
 
 /* Hover effekt på mappe billederne der ændrer stærrelsen til 1.1 */
@@ -256,8 +256,8 @@ grid_1-1-1-1 {
 .i img {
   /* width: 100%;
     height: 100%; */
-  object-fit: cover; /* Sørg for at billedet dækker hele containeren uden at blive forvrænget */
-  transition: filter 0.3s ease; /* Glidende overgang ved hover */
+  object-fit: cover;
+  transition: filter 0.3s ease; /* glat overgang ved hover */
 }
 
 /* Hover effekt på mappe billederne der ændrer stærrelsen til 1.1 */
@@ -270,9 +270,9 @@ grid_1-1-1-1 {
 /* side 3 om mig mobil */
 
 .rundt_img_container {
-  display: flex; /* Brug Flexbox for centrering */
-  justify-content: center; /* Centrerer billedet horisontalt */
-  align-items: center; /* Centrerer billedet vertikalt */
+  display: flex;
+  justify-content: center;
+  align-items: center;
   padding-bottom: 30px;
 }
 .rundt_img {
@@ -371,10 +371,6 @@ footer {
     font-size: small;
   }
   /* generelt slut */
-
-  /* menu for desktop start */
-
-  /* menu for desktop slut */
 
   /* tekst styling forside */
   .forside_img {
