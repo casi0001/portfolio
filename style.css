@@ -17,12 +17,6 @@ img {
 /*************** Reset *********************/
 
 /* fonte family */
-.inter {
-  font-family: "Inter", serif;
-  font-optical-sizing: auto;
-  font-weight: 500;
-  font-style: normal;
-}
 
 .tinos-regular-italic {
   font-family: "Tinos", serif;
@@ -220,7 +214,6 @@ grid_1-1-1-1 {
   display: grid;
   grid-template-columns: 1fr;
   gap: 20px;
-  align-self: strech;
 }
 .p_space_top2 {
   padding-top: 8px;
@@ -402,13 +395,7 @@ footer {
     font-style: italic;
     font-family: "Tinos", serif;
   }
-  .flex {
-    display: grid;
-    grid-template-rows: 1fr, 1fr, 1fr;
-    justify-content: center;
-    align-items: center;
-    gap: 10px;
-  }
+
   .knap_1 {
     width: 160px;
     grid-row: 2;
@@ -458,7 +445,6 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     gap: 30px;
-    align-self: strech;
   }
 
   .grid_1-1-1-1 {
