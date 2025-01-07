@@ -44,7 +44,7 @@ img {
   border: 2px #b1c2e9 solid;
 }
 .scroll_billeder img {
-  height: s;
+  height: 60cqw;
   width: auto;
   padding-right: 25px;
   /* padding-top: 20px; */
@@ -378,7 +378,7 @@ footer {
 
   /* tekst styling forside */
   .forside_img {
-    height: 26cqw;
+    height: 20cqw;
     width: auto;
   }
   .velkommen {
@@ -394,7 +394,7 @@ footer {
   }
   .portfolio {
     font-size: 11cqw;
-    letter-spacing: 8px;
+    letter-spacing: 3px;
     font-family: "Tinos", serif;
     line-height: 1;
     font-style: italic;
