@@ -139,10 +139,6 @@ h3 {
 }
 /* her nu */
 
-/* burger menu strat */
-
-/* burger menu slut */
-
 /* generel styling slut */
 
 /* forside styling */
@@ -209,7 +205,7 @@ h3 {
 }
 
 .mappe {
-  width: 200px; /* Giver mapperne en fast bredde på 200px */
+  width: 180px; /* Giver mapperne en fast bredde på 200px */
   box-sizing: border-box; /* Inkluderer padding og border i bredden */
   display: flex; /* Brug Flexbox for at arrangere indholdet */
   flex-direction: column; /* Stabler indholdet vertikalt */
@@ -391,11 +387,7 @@ footer {
     font-size: 2cqw;
     line-height: 0.1;
   }
-  .left {
-    text-align: left; /* Centrerer alt indhold horisontalt */
-    align-items: left;
-    margin-left: 220px;
-  }
+
   .portfolio {
     font-size: 9cqw;
     letter-spacing: 3px;
@@ -472,7 +464,9 @@ footer {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
   }
-
+  .mappe {
+    width: 200px;
+  }
   /* side 2 projekter slut */
 
   /* side 3 om mig start */
