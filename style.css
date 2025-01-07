@@ -96,6 +96,10 @@ h3 {
   display: flex;
   align-content: space-between;
 }
+
+.p_space_top_mobil {
+  padding-top: 20px;
+}
 .flex_bund {
   justify-content: center; /* Centrerer knapperne horisontalt */
   align-items: center; /* Centrerer knapperne vertikalt */
@@ -378,13 +382,13 @@ footer {
 
   /* tekst styling forside */
   .forside_img {
-    height: 20cqw;
+    height: 22cqw;
     width: auto;
   }
   .velkommen {
     font-family: "Tinos", serif;
     font-style: italic;
-    font-size: 2.2cqw;
+    font-size: 2cqw;
     line-height: 0.1;
   }
   .left {
@@ -393,7 +397,7 @@ footer {
     margin-left: 220px;
   }
   .portfolio {
-    font-size: 11cqw;
+    font-size: 9cqw;
     letter-spacing: 3px;
     font-family: "Tinos", serif;
     line-height: 1;
@@ -454,6 +458,9 @@ footer {
     object-fit: cover;
   }
 
+  .p_space_top5 {
+    padding-top: 38px;
+  }
   .grid_1-1-1 {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -537,6 +544,8 @@ footer {
     gap: 20px;
     padding-bottom: 30px;
   }
-
+  .p_space_top_mobil {
+    padding-top: 0px;
+  }
   /* tema 3 grundlæggende ux/ui */
 }
