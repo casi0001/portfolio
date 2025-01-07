@@ -47,6 +47,7 @@ nav {
   text-decoration: none;
   transition: color 0.3s;
   text-align: end;
+  font-size: x-large;
 }
 
 .menu a:hover {
