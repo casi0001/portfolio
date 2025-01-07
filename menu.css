@@ -81,10 +81,10 @@ nav {
     transition: 0.2s linear;
   }
 
-  /* .burger.active .line:nth-child(2) {
+  .burger.active .line:nth-child(2) {
     opacity: 0;
     transition: 0.15s linear;
-  } */
+  }
 
   .burger.active .line:nth-child(3) {
     transform: rotate(-45deg) translate(5px, -5px);
